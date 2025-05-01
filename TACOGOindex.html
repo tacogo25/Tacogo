@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TACO GO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+    }
+    header {
+      background-color: #ff6f00;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .menu {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .dish {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .order-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: #ff6f00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TACO GO</h1>
+    <nav>
+      <a href="#menu">Menú</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>¡Disfruta el auténtico sabor mexicano donde estés!</h2>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="dish">
+      <h3>Taco al Pastor</h3>
+      <p>Carne marinada, piña y cebolla en tortilla de maíz.</p>
+    </div>
+    <div class="dish">
+      <h3>Quesadilla</h3>
+      <p>Queso derretido con pollo o carne en tortilla de harina.</p>
+    </div>
+    <div class="dish">
+      <h3>Guacamole</h3>
+      <p>Aguacate fresco con tomate, cebolla y limón.</p>
+    </div>
+  </section>
+
+  <button class="order-button">Haz tu pedido ahora</button>
+
+  <footer id="contacto">
+    <p>Contacto: info@tacogo.com | Síguenos en @TacoGoMx</p>
+  </footer>
+</body>
+</html>
